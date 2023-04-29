@@ -1,0 +1,18 @@
+
+<div class="form-bottom">
+    <form [formGroup]="ClientForm" (ngSubmit)="UpdateClient(this.ClientForm)">
+        <label ></label>
+        <input type="text"  formControlName="cin" class="form-first-name form-control">
+        <label ></label>
+        <input type="text"  formControlName="nom" class="form-first-name form-control">
+        <label ></label>
+        <input type="text"  formControlName="prenom" class="form-first-name form-control">
+        <label ></label>
+        <input type="text"  formControlName="password" class="form-first-name form-control">
+        <label ></label>
+        <input type="text"  formControlName="email" class="form-first-name form-control">
+        <label ></label>
+        <input type="text"  formControlName="adresse" class="form-first-name form-control"      >
+    <button type="submit">ADD</button>
+    </form>
+    </div>

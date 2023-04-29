@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="text-center">Liste des reservations</h1>
+   
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>idRes</th>
+            <th>date Reservation</th>
+            <th>Nombre personne</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let r of AllReservations">
+        <tr>
+            <td>{{r.idRes}}</td>
+            <td>{{r.dateRes}}</td>
+            <td>{{r.nbPrs}}</td>
+            <td> <input type="button" value="Change" class="btn btn-info" (click)="ChangeReservation(r)" ></td>
+            <td> <input type="button" value="Save" class="btn btn-info" (click)="UpdateReservation(r)" ></td>
+            <td><button class="btn btn-danger" (click)="DeleteReservations(r.idRes)"><i class="fa-solid fa-trash"></i></button></td>
+        </tr>
+    </tbody>
+</table>
+<button type="button" class="btn btn-outline-info"><i class="fa-sharp fa-solid fa-backward"></i></button>
+</div>
